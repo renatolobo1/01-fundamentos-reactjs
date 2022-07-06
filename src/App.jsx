@@ -4,9 +4,12 @@
 
   return (
     <>
-      <Post/>
-      <Post/>
-      <Post/>      
+      <Post 
+        author="Mathues" 
+        content="Testando"/>       
+        <Post 
+        author="Renato" 
+        content="Lindooo"/>      
     </>
    
   )
