@@ -1,15 +1,18 @@
+ import { Header} from './components/Header';
  import {Post} from "./Post"
+ import './styles.css';
 
  export function App() {
 
   return (
     <>
+    <Header/>
       <Post 
-        author="Mathues" 
-        content="Testando"/>       
-        <Post 
         author="Renato" 
-        content="Lindooo"/>      
+        content="Lôbo"/>       
+        <Post 
+        author="Guedes" 
+        content="Alcoforado"/>      
     </>
    
   )
