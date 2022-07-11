@@ -16,7 +16,9 @@
         <main>
         <Post 
             author="Renato" 
-            content="Lôbo"/>       
+            content="Lôbo"
+          />  
+          <Post/>     
              
         </main>
       </div>   
