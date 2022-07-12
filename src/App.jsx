@@ -6,6 +6,7 @@
 
  import './global.css';
 
+
  export function App() {
 
   return (
@@ -18,8 +19,8 @@
             author="Renato" 
             content="Lôbo"
           />  
-          <Post/>     
-             
+        <Post/>     
+       
         </main>
       </div>   
     </>
