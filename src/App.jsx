@@ -9,7 +9,7 @@
  const posts = [ {
       id: 1,
       author:{
-        avatarUrl: '',
+        avatarUrl: 'https://avatars.githubusercontent.com/u/33937166?v=4',
         name:'Renato Lôbo',
         role: 'CTO @ Minhavida',
       },
@@ -23,7 +23,7 @@
   {
     id: 2,
     author:{
-      avatarUrl: '',
+      avatarUrl: 'https://avatars.githubusercontent.com/u/11760617?v=4',
       name:'Mathues Lôbo',
       role: 'Novato @ Minhavida',
     },

@@ -102,9 +102,7 @@
   border: 1px solid var(--green-500);
   font-weight: bold;
   cursor: pointer;
-  transition:color 0.1s, background-color 0.1s;
-
-  
+  transition:color 0.1s, background-color 0.1s;  
 }
 
 .commentForm button[type=submit]:hover {
