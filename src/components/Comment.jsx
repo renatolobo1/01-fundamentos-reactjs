@@ -27,7 +27,7 @@ export function Comment({content, onDeleteComment}){
 
        <footer>
         <button>
-          <ThumbsUp />
+          <ThumbsUp /> 
           Aplaudir <span>20</span>
         </button>
         
