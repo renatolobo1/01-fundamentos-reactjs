@@ -1,5 +1,6 @@
 import {format, formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR';
+import { CodesandboxLogo } from 'phosphor-react';
 import { useState } from 'react';
 
 import { Avatar } from './Avatar';
@@ -32,8 +33,14 @@ export function Post({author, publishedAt, content}) {
         setNewCommentText('');
         
     }
+
    function handleNewCommentChange () {
+    event.target.setCustomValidity('')
     setNewCommentText(event.target.value);
+   }
+
+   function handleNewCommentInvalid () {
+        event.target.setCustomValidity('Esse campo e Obrigatorio')
    }
 
    function deleteComment (commentToDelete){
@@ -43,6 +50,8 @@ export function Post({author, publishedAt, content}) {
 
     setComments(commentsWithoutDeleteOne);
    }
+
+   const isNewCommentEmpty = newCommentText.length === 0;
     
     return (
         <article className={styles.post}>
@@ -77,9 +86,11 @@ export function Post({author, publishedAt, content}) {
                     placeholder='Deixe um comentario'
                     value={newCommentText}
                     onChange={handleNewCommentChange}
+                    onInvalid={handleNewCommentInvalid}
+                    required
                 />
                 <footer>
-                    <button type='submit'>Publicar</button>
+                    <button type='submit' disabled={isNewCommentEmpty}>Publicar</button>
                 </footer>               
             </form>
 
